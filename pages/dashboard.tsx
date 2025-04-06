@@ -1,15 +1,14 @@
-import Navbar from '../components/Navbar';
+import React from "react";
+
 
 export default function Dashboard() {
-  return (
-    <>
-      <Navbar />
+    return (
       <main className="flex items-center justify-center min-h-screen bg-white text-black">
         <div className="text-center space-y-4">
-          <h1 className="text-3xl font-semibold">Your Dashboard</h1>
-          <p>This is where you’ll access your highlights.</p>
+          <h2 className="text-2xl font-semibold">Your KnowGlow Dashboard</h2>
+          <p>Here’s where your saved highlights and AI summaries will go.</p>
         </div>
       </main>
-    </>
-  );
-}
+    );
+  }
+  
