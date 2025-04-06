@@ -8,7 +8,14 @@ export default function Login() {
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    const { error } = await supabase.auth.signInWithOtp({ email });
+
+    const { error } = await supabase.auth.signInWithOtp({
+      email,
+      options: {
+        emailRedirectTo: "https://knowglow-site.vercel.app/dashboard",
+      },
+    });
+
     if (error) {
       setMessage("Error sending magic link.");
     } else {
