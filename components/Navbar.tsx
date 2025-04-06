@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="bg-gray-900 text-white px-6 py-4 shadow-md">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <div className="text-xl font-semibold">
-          <Link href="/">KnowGlow</Link>
+          <Link href="/" className="hover:underline">KnowGlow</Link>
         </div>
         <div className="space-x-6 text-sm">
           <Link href="/login" className="hover:underline">Login</Link>
