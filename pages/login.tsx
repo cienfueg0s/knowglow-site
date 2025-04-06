@@ -20,9 +20,9 @@ export default function Login() {
     <>
       <Navbar />
       <main className="flex items-center justify-center min-h-screen bg-white text-black">
-        <div className="text-center space-y-4 w-full max-w-sm">
+        <div className="text-center space-y-4">
           <h1 className="text-3xl font-semibold">Login to KnowGlow</h1>
-          <form onSubmit={handleLogin}>
+          <form onSubmit={handleLogin} className="w-full max-w-sm mt-4">
             <input
               type="email"
               placeholder="Enter your email"
@@ -37,8 +37,8 @@ export default function Login() {
             >
               Send Magic Link
             </button>
+            {message && <p className="mt-4 text-center">{message}</p>}
           </form>
-          {message && <p className="mt-4 text-center">{message}</p>}
         </div>
       </main>
     </>
